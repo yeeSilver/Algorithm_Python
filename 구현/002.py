@@ -10,7 +10,7 @@
 # print(a+b)
 
 # ---- 수정 코드 : 맞았습니다 ----
-a, b = map(int, input('정수 A, B를 입력해주세요 (0 < A, B < 10)').split())
+a, b = map(int, input().split())
 print(a+b)
 
 # ---- 수정 코드 : 맞았습니다 ----
@@ -18,3 +18,7 @@ a, b = input().split()
 a = int(a)
 b = int(b)
 print(a+b)
+
+# 1001번 두 정수 A와 B를 입력받은 다음, A-B를 출력하는 프로그램을 작성하시오.
+a, b = map(int, input().split())
+print(a-b)
