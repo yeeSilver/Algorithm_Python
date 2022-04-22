@@ -1,24 +1,27 @@
-result = []
-array = []
+def groupNum(arr):
+    result = []
+    result.append(arr[0])
+    result.append(arr[1])
+    for i in range(2, len(arr)):
+        print(i)
+        if arr[i] in result:
+            if arr[i-1] == arr[i]:
+                result.append(arr[i])
+            else:
+                pass
+        else:
+            result.append(arr[i])
+    print((arr))
+    print((result))
 
-    
-def solution(n):
-    answer = 0
-    while n > 0:
-        answer += n % 10
-        n //= 10  # n=n//10(n을 10으로 나눈 뒤 몫의 정수만 다시 가져와)
-    return answer
+    if len(arr) == len(result):
+        r = True
+    else:
+        r = False
+    return r
 
+arr = ['a', 'a', 'b']
+print(groupNum(arr))
 
-    
-for i in range(1, 10000):
-    num = solution(i) + i
-    print('i = %d, num = %d'%(i, num))
-    if (num<= 10000) :
-        result.append(num)
-    
-for j in range(1, 10000):
-    if j not in result:
-        array.append(j)
-
-print(array)
+for i in range(1,3):
+    print('프린트 %d' %(i))
