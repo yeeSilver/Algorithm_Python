@@ -1,4 +1,4 @@
-n = int(input())
+count = [2, 2, 3, 4, 4]
 
-arr = [list(map(int, input().split())) for _ in range(n)]
-print(arr)
+maxList = max(count)
+print(maxList)

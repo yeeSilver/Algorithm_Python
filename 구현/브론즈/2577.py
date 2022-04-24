@@ -24,10 +24,10 @@ Q) 문득 궁금해진 점.
   
 
 '''
-arr = []*3
+arr = [0]*3
 for i in range(3):
     arr[i] = int(input())
-
+print(arr)
 
 # 숫자를 문자열로 변환하고 배열에 원소로 넣으면 한 글자씩 분리되어 str으로 들어가게 됨
 
@@ -39,5 +39,6 @@ for i in range(3):
 
 # -- 수정 후 코드 --
 mulNum = list(str(arr[0]*arr[1]*arr[2]))
+
 for i in range(10):
-    print(mulNum.count(i))
+    print(mulNum.count(str(i)))
