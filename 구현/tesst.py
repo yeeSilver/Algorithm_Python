@@ -1,4 +1,5 @@
-count = [2, 2, 3, 4, 4]
-
-maxList = max(count)
-print(maxList)
+c_alpha = ['c=', 'c-', 'dz=', 'd-', 'lj', 'nj', 's=', 'z=']
+str = input()
+for word in c_alpha:
+  str.replace(word,'*')
+print(str)
