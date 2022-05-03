@@ -10,3 +10,10 @@ function count(n) {
     console.log(j);
   }
 }
+function print(n) {
+  for (const i = 0; i < n; i++) {
+    for (const j = 0; j < n; j++) {
+      console.log(i, j);
+    }
+  }
+}
